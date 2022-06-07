@@ -1,0 +1,52 @@
+/*Basic CSS for nav bar and colors in all the pages*/
+
+html, body {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-bar{
+  background: black;
+  overflow: hidden;
+}
+
+.nav-bar a.header-logo{
+  font-family: "Georgia";
+  font-size: 20px;
+  float: left;
+  padding-bottom: 12px;
+  margin-right: 25px;
+  color: darkgoldenrod;
+}
+
+.nav-bar a.header-logo:hover{
+  background-color: transparent;
+  color: darkgoldenrod;
+}
+.nav-bar a{
+  float: right;
+  text-align: center;
+  padding:10px 16px;
+  text-decoration: none;
+  color: lightgray;
+  font-size: 18px;
+}
+
+.nav-bar a:hover{
+  color: white;
+  background-color: darkgoldenrod;
+  border-radius: 5px;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}
+
+
+/*CSS for Login page*/
+
+
+
