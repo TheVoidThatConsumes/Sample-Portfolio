@@ -1,3 +1,17 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+
 /*Basic CSS for nav bar and colors in all the pages*/
 
 html, body {
@@ -10,13 +24,16 @@ html, body {
 .nav-bar{
   background: black;
   overflow: hidden;
+  position: sticky;
+  top: 0;
 }
 
 .nav-bar a.header-logo{
-  font-family: "Georgia";
-  font-size: 20px;
+  font-family: "Papyrus";
+  font-size: 22px;
   float: left;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
+  padding-top: 5px;
   margin-right: 25px;
   color: darkgoldenrod;
 }
@@ -29,24 +46,164 @@ html, body {
   float: right;
   text-align: center;
   padding:10px 16px;
+  padding-left: 5px;
   text-decoration: none;
   color: lightgray;
-  font-size: 18px;
+  font-size: 20px;
+  vertical-align: middle;
 }
 
 .nav-bar a:hover{
   color: white;
   background-color: darkgoldenrod;
   border-radius: 5px;
+  text-align: center;
 }
 
+.footer{
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 0.01px;
+  margin-top: 75px;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: gray;
+}
+
+                                                            /*INDEX PAGE CSS*/
+
+/*Hero Section: */
 img{
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  padding-top: 50px;
+  float: right;
+  padding-right: 50px;
+}
+
+.hero-text{
+  padding-top: 70px;
+  padding-left: 40px;
+  float: left;
+}
+
+.hero-text h1{
+  font-size: 70px;
+}
+
+.hero-text h2{
+  font-size: 80px;
+}
+
+span{
+  color: gold;
+  font-size: 65px;
+}
+
+.hero-text h3{
+  font-weight: lighter;
+  font-style: italic;
+  padding-bottom: 20px;
 }
 
 
-/*CSS for Login page*/
+/*Main: */
+main{
+  clear: right;
+}
+
+.intro{
+  align-items: center;
+  background-color: black;
+  padding-top: 200px;
+  margin-bottom: 80px;
+}
+
+.intro h1, p{
+  text-align: center;
+}
 
 
 
+
+
+                                                          /*LOGIN PAGE CSS*/
+
+
+
+
+
+
+
+                                                          /*SIGN UP PAGE CSS*/
+
+
+
+
+
+
+
+                                                          /*CONTACT PAGE CSS*/
+.contact{
+  text-align: center;
+}
+
+.contact h2{
+  text-align: center;
+  font-weight: lighter;
+}
+
+.contact h3{
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.contact-form{
+  text-align: center;
+  padding: 25px;
+  margin-top: 15px;
+  border: 1px solid darkgoldenrod;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label{
+font-size: 18px;
+}
+
+input[type=text], textarea {
+width: 100%;
+padding: 18px;
+border: 1px solid darkgray;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 26px;
+background-color: ghostwhite;
+font-family: monospace;
+}
+
+#message{
+  height: 180px;
+}
+
+input[type=submit] {
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: green;
+}

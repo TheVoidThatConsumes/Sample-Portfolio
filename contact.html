@@ -14,12 +14,45 @@
       <a href="contact.html">Contact</a>
       <a href="register.html">Register</a>
       <a href="login.html">Login</a>
-      <a href="about.html">About</a>
+      <a href="index.html">About</a>
     </div>
   </header>
 
+  
   <body>
-    
+    <div class="contact">
+    <h1><span>Contact </span>     Me</h1>
+    <h2>Do you have any questions? Use the form below to send a message.<br/>Don't worry. I won't bite.<br/><h3>(and I respond faster than a Subaru Crosstrek driving through a busy highway.)</h3></h2>
+  <br/>
+
+  <main>
+  <div class="contact-form">
+    <form>
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="YourName" placeholder="Input your Name here..." autofocus required maxlength="52">
+
+
+      <label for="email">Your Email:</label>
+      <input type="text" id="email" name="YourEmail" placeholder="Input your Email address here..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required maxlength="52">
+
+
+      <label for="message">Drop a Message:</label>
+      <textarea id="message" name="message" placeholder="Write something. Anything..." maxlength="256" required></textarea>
+
+      <input type="submit" value="SUBMIT">
+
+    </form>
+  </div>
+</main>
+
+  </div>
   </body>
+
+  <footer>
+    <div class="footer">
+      <p><small>Made with <span style="color: #ff0000; font-size: 16px;"> &hearts; </span> for Zuri&trade; Training, 2022.</small></p>
+    </div>
+  </footer>
 
 </html>
