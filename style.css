@@ -61,6 +61,7 @@ html, body {
 }
 
 .footer{
+  position: sticky;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 17px;
@@ -72,7 +73,7 @@ html, body {
   margin-top: 75px;
   margin-left: 0;
   margin-right: 0;
-  background-color: gray;
+  background-color: black;
 }
 
                                                             /*INDEX PAGE CSS*/
@@ -134,19 +135,71 @@ main{
 
 
                                                           /*LOGIN PAGE CSS*/
+.login h1, h2{
+text-align: center;
+}
+
+.login h2{
+  font-weight: lighter;
+}
+
+
+label{
+  font-size: 20px;
+}
+
+.login-form{
+  padding: 55px;
+  margin-top: 35px;
+  border: 1px solid darkgoldenrod;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+  text-align: center;
+}
 
 
 
 
 
+                                                          /*REGISTER PAGE CSS*/
+.register h1, h2, h3{
+  text-align: center;
+}
 
+.register h3{
+  font-size: 30px;
+  font-weight: lighter;
+  font-style: italic;
+}
 
-                                                          /*SIGN UP PAGE CSS*/
+.register-form{
+  padding: 35px;
+  margin-top: 15px;
+  border: 1px solid darkgoldenrod;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+}
 
+.register input[type=text], .register input[type=password], .register label[for=gender], .register label[for=country]{
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+  padding: 25px;
+}
 
-
-
-
+#gender, #country{
+width: 100%;
+padding: 18px;
+border: 1px solid darkgray;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 26px;
+background-color: ghostwhite;
+font-family: monospace;
+}
 
 
                                                           /*CONTACT PAGE CSS*/
@@ -179,7 +232,10 @@ label{
 font-size: 18px;
 }
 
-input[type=text], textarea {
+
+/*general styling for form elements*/
+
+input[type=text], textarea, input[type=password], select {
 width: 100%;
 padding: 18px;
 border: 1px solid darkgray;
@@ -189,6 +245,7 @@ margin-top: 6px;
 margin-bottom: 26px;
 background-color: ghostwhite;
 font-family: monospace;
+font-size: 22px;
 }
 
 #message{
@@ -196,6 +253,7 @@ font-family: monospace;
 }
 
 input[type=submit] {
+  text-align: center;
   background-color: darkgoldenrod;
   color: white;
   padding: 12px 20px;
@@ -205,5 +263,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-background-color: green;
+background-color: black;
+border: 1px solid gold;
+color: white;
 }

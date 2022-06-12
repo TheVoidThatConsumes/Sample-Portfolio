@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+  <header>
+    <div class="nav-bar">
+      <a class="header-logo" href="#">David Obi.</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="index.html">About</a>
+    </div>
+  </header>
+
+  
+  <body>
+    <div class="login">
+    <h1><span>Login</span></h1>
+    <h2>You are a regular here, aren't you? Input your login details and hop right in!</h2>
+  <br/>
+
+  <main>
+  <div class="login-form">
+    <form>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="UserID" placeholder="Enter your Username" autofocus required maxlength="16">
+
+      <br/>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="Userpass" placeholder="Enter your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*A-Z).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 characters." required >
+
+    <br/>
+
+      <input type="submit" value="SIGN IN">
+
+    </form>
+  </div>
+</main>
+
+  </div>
+  </body>
+
+  <footer>
+    <div class="footer">
+      <p><small>Made with <span style="color: #ff0000; font-size: 16px;"> &hearts; </span> for Zuri&trade; Training, 2022.</small></p>
+    </div>
+  </footer>
+
+</html>
